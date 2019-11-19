@@ -35,8 +35,8 @@ try:
 except:
     from tensorboardX import SummaryWriter
 
-from transformers import get_linear_schedule_with_warmup
-
+# from transformers import get_linear_schedule_with_warmup
+from transformers import WarmupLinearSchedule as get_linear_schedule_with_warmup
 from utils import logger
 from lm_seqs_dataset import LmSeqsDataset
 from grouped_batch_sampler import GroupedBatchSampler, create_lengths_groups
