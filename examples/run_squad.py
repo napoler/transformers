@@ -88,7 +88,8 @@ MODEL_CLASSES = {
     "xlnet": (XLNetConfig, XLNetForQuestionAnswering, XLNetTokenizer),
     "xlm": (XLMConfig, XLMForQuestionAnswering, XLMTokenizer),
     "distilbert": (DistilBertConfig, DistilBertForQuestionAnswering, DistilBertTokenizer),
-    "albert": (AlbertConfig, AlbertForQuestionAnswering, BertTokenizer), #使用albert的BertTokenizer
+    "albert": (AlbertConfig, AlbertForQuestionAnswering, AlbertTokenizer),
+    "albert_zh": (AlbertConfig, AlbertForQuestionAnswering, BertTokenizer), #使用albert的BertTokenizer
 }
 
 
